@@ -6,9 +6,7 @@ from pyimagesearch.colordescriptor import ColorDescriptor
 from pyimagesearch.searcher import Searcher 
 
 # create flask instance
-# app = Flask(__name__)
-app = Flask(__name__, static_folder = "static")
-#app = Flask(__name__, static_url_path ="",static_folder = "static" )
+app = Flask(__name__)
 INDEX = os.path.join(os.path.dirname(__file__), 'index.csv')
 
 # main route

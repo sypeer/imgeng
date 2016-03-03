@@ -6,8 +6,7 @@ $("#results-table").hide();
 $("#error").hide();
  
 // global
-var url = 'dataset/';
-//var url = 'http://static.pyimagesearch.com.s3-us-west-2.amazonaws.com/vacation-photos/dataset/';
+var url = 'http://static.pyimagesearch.com.s3-us-west-2.amazonaws.com/vacation-photos/dataset/';
 var data = [];
  
 $(function() {

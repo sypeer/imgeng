@@ -1,5 +1,6 @@
 # start with a base image
-FROM ubuntu:latest
+FROM ubuntu:14.10
+MAINTAINER Real Python <info@realpython.com>
 
 # install dependencies
 RUN apt-get update
@@ -24,4 +25,4 @@ RUN ln -s /config/nginx.conf /etc/nginx/sites-enabled/
 RUN ln -s /config/supervisor.conf /etc/supervisor/conf.d/
 
 EXPOSE 80
-CMD ["python", "app/app.py"]]
+CMD ["python", "app/app.py"]

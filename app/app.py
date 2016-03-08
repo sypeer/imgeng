@@ -14,10 +14,6 @@ INDEX = os.path.join(os.path.dirname(__file__), 'index.csv')
 def index():
     return render_template('index.html')
 
-# run!
-if __name__ == '__main__':
-    app.run('0.0.0.0', debug=True)
-
 # search route
 @app.route('/search', methods=['POST'])
 def search():
@@ -57,3 +53,7 @@ def search():
 	except:
 		# return error										
 		jsonify({"sorry": "Sorry, no results! Please try again."}), 500
+
+# run!
+if __name__ == '__main__':
+    app.run('0.0.0.0', debug=True)
